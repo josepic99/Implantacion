@@ -25,7 +25,8 @@ echo "Conexion exitosa con la base de datos<br>";
     function correoDisponible($comprobarCorreo,$con){
         $solicitud="SELECT `correo` FROM investigador_login WHERE `correo` LIKE '".$comprobarCorreo."'";
         //$query = mysqli_query($conexion, $solicitud);
-        if ($result = $con->query($solicitud)) {
+        if ($result = $conn->query("SELECT `node` FROM `nodes` WHERE 1") or die($conn->error());
+while ($node = $nodes->fetch_assoc()) : {
             // determinar el número de filas del resultado 
             $row_cnt = $result->num_rows;
             if($row_cnt == 1){
