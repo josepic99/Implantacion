@@ -1,0 +1,34 @@
+===CARPETAS====
+css - tiene 3 archivos:
+-boostrap y boostrap.map es para que la
+pagina sea responsive.
+-"estilosRegistro" son para la pagina de registro 
+-"Styles" son colores y tamaños de letras
+
+img tiene imagenes
+
+====PHP====
+cuenta.php - Aca es donde salen los datos
+propios de cada usuario. Y al investigador
+debería redirigir a una pagina para
+registrar algun paciente.
+
+register.php -- Funciones y conexion para
+registrar a un investigador.
+
+sesion-php -- Funciones y conexion para
+que un investigador inicie sesion.
+
+====HTML====
+index.html - pagina de inicio
+registro.html - pagina para registrarse
+como investigador
+sesion.html - pagina para iniciar sesion
+
+
+====OTROS ARCHIVOS====
+memorytest.sql - el script de la base de datos
+con 4 usuarios de prueba registrados
+
+Modelo De base dedatos - es el modelo en 
+MySQL del cual salió el script.
